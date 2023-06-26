@@ -1,0 +1,113 @@
+\doxysection{model.\+Postgres Class Reference}
+\hypertarget{classmodel_1_1Postgres}{}\label{classmodel_1_1Postgres}\index{model.Postgres@{model.Postgres}}
+
+
+Classe che si occupa di gestire il database in Postgresql.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1Postgres_a03f36f82d98c21c0edceb206e4ccedaf}\label{classmodel_1_1Postgres_a03f36f82d98c21c0edceb206e4ccedaf} 
+void {\bfseries connect} ()
+\begin{DoxyCompactList}\small\item\em Metodo per connettersi al server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodel_1_1Postgres_ad42715b8e0b4cea231e304ca6241938d}{disconnect}} ()  throws SQLException 
+\begin{DoxyCompactList}\small\item\em Metodo per disconnettersi dal server. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classmodel_1_1Postgres_a94b433841793b11e11292d3bf73fccd4}{get\+Totale}} ()
+\item 
+int \mbox{\hyperlink{classmodel_1_1Postgres_ad452b07699570a978310c32b5e6763f6}{get\+Last\+Id}} ()
+\item 
+List$<$ \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} $>$ \mbox{\hyperlink{classmodel_1_1Postgres_af94bbdd1525934f11153f4f12a80626f}{get\+Voci}} ()
+\item 
+void \mbox{\hyperlink{classmodel_1_1Postgres_aa1284b525792c9db54ec673e1ff60592}{add\+Voce}} (\mbox{\hyperlink{classmodel_1_1Voce}{Voce}} voce)
+\item 
+void \mbox{\hyperlink{classmodel_1_1Postgres_a797e0702edb592b8353ea51c54c5e837}{del\+Voce}} (int id\+To\+Delete)
+\item 
+void \mbox{\hyperlink{classmodel_1_1Postgres_aa85b33c4a9ed433c2ee756f38121a2df}{modify\+Voce}} (\mbox{\hyperlink{classmodel_1_1Voce}{Voce}} voce)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe che si occupa di gestire il database in Postgresql. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodel_1_1Postgres_aa1284b525792c9db54ec673e1ff60592}\label{classmodel_1_1Postgres_aa1284b525792c9db54ec673e1ff60592} 
+\index{model.Postgres@{model.Postgres}!addVoce@{addVoce}}
+\index{addVoce@{addVoce}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{addVoce()}{addVoce()}}
+{\footnotesize\ttfamily void model.\+Postgres.\+add\+Voce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmodel_1_1Voce}{Voce}}}]{voce }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em voce} & voce del database Metodo che inserisce una voce nel database \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmodel_1_1Postgres_a797e0702edb592b8353ea51c54c5e837}\label{classmodel_1_1Postgres_a797e0702edb592b8353ea51c54c5e837} 
+\index{model.Postgres@{model.Postgres}!delVoce@{delVoce}}
+\index{delVoce@{delVoce}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{delVoce()}{delVoce()}}
+{\footnotesize\ttfamily void model.\+Postgres.\+del\+Voce (\begin{DoxyParamCaption}\item[{int}]{id\+To\+Delete }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em voce} & voce del database Metodo che elimina una voce nel database \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmodel_1_1Postgres_ad42715b8e0b4cea231e304ca6241938d}\label{classmodel_1_1Postgres_ad42715b8e0b4cea231e304ca6241938d} 
+\index{model.Postgres@{model.Postgres}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void model.\+Postgres.\+disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws SQLException}
+
+
+
+Metodo per disconnettersi dal server. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em SQLException} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classmodel_1_1Postgres_ad452b07699570a978310c32b5e6763f6}\label{classmodel_1_1Postgres_ad452b07699570a978310c32b5e6763f6} 
+\index{model.Postgres@{model.Postgres}!getLastId@{getLastId}}
+\index{getLastId@{getLastId}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{getLastId()}{getLastId()}}
+{\footnotesize\ttfamily int model.\+Postgres.\+get\+Last\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int last\+Id
+\end{DoxyReturn}
+Metodo che ritorna il valore dell\textquotesingle{}ultimo id attuale \Hypertarget{classmodel_1_1Postgres_a94b433841793b11e11292d3bf73fccd4}\label{classmodel_1_1Postgres_a94b433841793b11e11292d3bf73fccd4} 
+\index{model.Postgres@{model.Postgres}!getTotale@{getTotale}}
+\index{getTotale@{getTotale}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{getTotale()}{getTotale()}}
+{\footnotesize\ttfamily String model.\+Postgres.\+get\+Totale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int totale
+\end{DoxyReturn}
+Metodo che calcola e ritorna il totale del bilancio \Hypertarget{classmodel_1_1Postgres_af94bbdd1525934f11153f4f12a80626f}\label{classmodel_1_1Postgres_af94bbdd1525934f11153f4f12a80626f} 
+\index{model.Postgres@{model.Postgres}!getVoci@{getVoci}}
+\index{getVoci@{getVoci}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{getVoci()}{getVoci()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} $>$ model.\+Postgres.\+get\+Voci (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+List$<$\+Voce$>$ lista delle voci nel databse
+\end{DoxyReturn}
+Metodo che ritorna le voci all\textquotesingle{}interno del database \Hypertarget{classmodel_1_1Postgres_aa85b33c4a9ed433c2ee756f38121a2df}\label{classmodel_1_1Postgres_aa85b33c4a9ed433c2ee756f38121a2df} 
+\index{model.Postgres@{model.Postgres}!modifyVoce@{modifyVoce}}
+\index{modifyVoce@{modifyVoce}!model.Postgres@{model.Postgres}}
+\doxysubsubsection{\texorpdfstring{modifyVoce()}{modifyVoce()}}
+{\footnotesize\ttfamily void model.\+Postgres.\+modify\+Voce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmodel_1_1Voce}{Voce}}}]{voce }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em voce} & voce del database Metoto che modifica una voce nel database \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/model/Postgres.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\doxysection{view.\+Table.\+Table\+Model Class Reference}
+\hypertarget{classview_1_1Table_1_1TableModel}{}\label{classview_1_1Table_1_1TableModel}\index{view.Table.TableModel@{view.Table.TableModel}}
+
+
+Classe che gestisce il modello della tabella.  
+
+
+Inheritance diagram for view.\+Table.\+Table\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classview_1_1Table_1_1TableModel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classview_1_1Table_1_1TableModel_a8d6a0948cbe78ed4421a37f4a72e39b3}{set\+Data}} (List$<$ \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} $>$ lista\+Voci)
+\item 
+String \mbox{\hyperlink{classview_1_1Table_1_1TableModel_aacac8aac25f2b3d6f3db4b8053b3b817}{get\+Column\+Name}} (int column)
+\item 
+int \mbox{\hyperlink{classview_1_1Table_1_1TableModel_a4cb99541c3db8ee4ffea1f12e4e53c1c}{get\+Column\+Count}} ()
+\item 
+int \mbox{\hyperlink{classview_1_1Table_1_1TableModel_a470742d82a9898bfcbbee05d0d9af9c0}{get\+Row\+Count}} ()
+\item 
+int \mbox{\hyperlink{classview_1_1Table_1_1TableModel_a9f6c34b1a88ed6edc147437ef4394cd5}{get\+Id\+At}} (int row\+Index)
+\item 
+\mbox{\hyperlink{classmodel_1_1Voce}{Voce}} \mbox{\hyperlink{classview_1_1Table_1_1TableModel_ab5e7460cd020b4a62a17ecd290a58e5a}{get\+Voce\+At}} (int row\+Index)
+\item 
+Object \mbox{\hyperlink{classview_1_1Table_1_1TableModel_a61ea2acc3b59a1bbb2d185a5770850c8}{get\+Value\+At}} (int row\+Index, int column\+Index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe che gestisce il modello della tabella. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classview_1_1Table_1_1TableModel_a4cb99541c3db8ee4ffea1f12e4e53c1c}\label{classview_1_1Table_1_1TableModel_a4cb99541c3db8ee4ffea1f12e4e53c1c} 
+\index{view.Table.TableModel@{view.Table.TableModel}!getColumnCount@{getColumnCount}}
+\index{getColumnCount@{getColumnCount}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{getColumnCount()}{getColumnCount()}}
+{\footnotesize\ttfamily int view.\+Table.\+Table\+Model.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int numero colonne 
+\end{DoxyReturn}
+\Hypertarget{classview_1_1Table_1_1TableModel_aacac8aac25f2b3d6f3db4b8053b3b817}\label{classview_1_1Table_1_1TableModel_aacac8aac25f2b3d6f3db4b8053b3b817} 
+\index{view.Table.TableModel@{view.Table.TableModel}!getColumnName@{getColumnName}}
+\index{getColumnName@{getColumnName}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{getColumnName()}{getColumnName()}}
+{\footnotesize\ttfamily String view.\+Table.\+Table\+Model.\+get\+Column\+Name (\begin{DoxyParamCaption}\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String
+\end{DoxyReturn}
+metodo per inserire i titoli delle colonne \Hypertarget{classview_1_1Table_1_1TableModel_a9f6c34b1a88ed6edc147437ef4394cd5}\label{classview_1_1Table_1_1TableModel_a9f6c34b1a88ed6edc147437ef4394cd5} 
+\index{view.Table.TableModel@{view.Table.TableModel}!getIdAt@{getIdAt}}
+\index{getIdAt@{getIdAt}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{getIdAt()}{getIdAt()}}
+{\footnotesize\ttfamily int view.\+Table.\+Table\+Model.\+get\+Id\+At (\begin{DoxyParamCaption}\item[{int}]{row\+Index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Index} & indice di riga \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int
+\end{DoxyReturn}
+Metodo che ritorno l\textquotesingle{}id della voce selezionata \Hypertarget{classview_1_1Table_1_1TableModel_a470742d82a9898bfcbbee05d0d9af9c0}\label{classview_1_1Table_1_1TableModel_a470742d82a9898bfcbbee05d0d9af9c0} 
+\index{view.Table.TableModel@{view.Table.TableModel}!getRowCount@{getRowCount}}
+\index{getRowCount@{getRowCount}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{getRowCount()}{getRowCount()}}
+{\footnotesize\ttfamily int view.\+Table.\+Table\+Model.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int numero righe 
+\end{DoxyReturn}
+\Hypertarget{classview_1_1Table_1_1TableModel_a61ea2acc3b59a1bbb2d185a5770850c8}\label{classview_1_1Table_1_1TableModel_a61ea2acc3b59a1bbb2d185a5770850c8} 
+\index{view.Table.TableModel@{view.Table.TableModel}!getValueAt@{getValueAt}}
+\index{getValueAt@{getValueAt}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{getValueAt()}{getValueAt()}}
+{\footnotesize\ttfamily Object view.\+Table.\+Table\+Model.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{row\+Index,  }\item[{int}]{column\+Index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Index} & indice riga \\
+\hline
+{\em column\+Index} & indice colonna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object
+\end{DoxyReturn}
+Metodo che ritorna il valore della riga e colonna passati \Hypertarget{classview_1_1Table_1_1TableModel_ab5e7460cd020b4a62a17ecd290a58e5a}\label{classview_1_1Table_1_1TableModel_ab5e7460cd020b4a62a17ecd290a58e5a} 
+\index{view.Table.TableModel@{view.Table.TableModel}!getVoceAt@{getVoceAt}}
+\index{getVoceAt@{getVoceAt}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{getVoceAt()}{getVoceAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} view.\+Table.\+Table\+Model.\+get\+Voce\+At (\begin{DoxyParamCaption}\item[{int}]{row\+Index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Index} & indice di riga \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Voce
+\end{DoxyReturn}
+Metodo che ritorna la voce selezionata \Hypertarget{classview_1_1Table_1_1TableModel_a8d6a0948cbe78ed4421a37f4a72e39b3}\label{classview_1_1Table_1_1TableModel_a8d6a0948cbe78ed4421a37f4a72e39b3} 
+\index{view.Table.TableModel@{view.Table.TableModel}!setData@{setData}}
+\index{setData@{setData}!view.Table.TableModel@{view.Table.TableModel}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void view.\+Table.\+Table\+Model.\+set\+Data (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} $>$}]{lista\+Voci }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Voci} & lista delle voci della Tabella \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/view/\+Table/Table\+Model.\+java\end{DoxyCompactItemize}

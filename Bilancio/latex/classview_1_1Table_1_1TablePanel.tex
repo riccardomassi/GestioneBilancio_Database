@@ -1,0 +1,102 @@
+\doxysection{view.\+Table.\+Table\+Panel Class Reference}
+\hypertarget{classview_1_1Table_1_1TablePanel}{}\label{classview_1_1Table_1_1TablePanel}\index{view.Table.TablePanel@{view.Table.TablePanel}}
+
+
+Classe che gestisce il pannello della Tabella Viene passato il database al costruttore per la funzione elimina voce.  
+
+
+Inheritance diagram for view.\+Table.\+Table\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classview_1_1Table_1_1TablePanel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classview_1_1Table_1_1TablePanel_a0b2024eb7049a3f5c635680d061d994f}\label{classview_1_1Table_1_1TablePanel_a0b2024eb7049a3f5c635680d061d994f} 
+{\bfseries Table\+Panel} (\mbox{\hyperlink{classmodel_1_1Postgres}{Postgres}} postgres)
+\item 
+void \mbox{\hyperlink{classview_1_1Table_1_1TablePanel_a71306dc1899849638205daa6f46efd3c}{set\+Data}} (List$<$ \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} $>$ lista\+Voci)
+\item 
+\Hypertarget{classview_1_1Table_1_1TablePanel_a6108a39e41eb1ddbc00a4a1f973691a5}\label{classview_1_1Table_1_1TablePanel_a6108a39e41eb1ddbc00a4a1f973691a5} 
+void {\bfseries aggiorna} ()
+\item 
+int \mbox{\hyperlink{classview_1_1Table_1_1TablePanel_aa4a7133d4309ba64fdbc07af2942601b}{search\+Text}} (String text\+To\+Search, int current\+Index)
+\item 
+void \mbox{\hyperlink{classview_1_1Table_1_1TablePanel_a8962ec47db1d023ae5b1c3bc8c2cb445}{set\+Table\+Listener}} (\mbox{\hyperlink{interfaceview_1_1Table_1_1TableListener}{Table\+Listener}} table\+Listener)
+\item 
+\mbox{\hyperlink{classview_1_1Table_1_1TableModel}{Table\+Model}} \mbox{\hyperlink{classview_1_1Table_1_1TablePanel_a58abc8e2d43da33240f005683769f96e}{get\+Model}} ()
+\item 
+JTable \mbox{\hyperlink{classview_1_1Table_1_1TablePanel_a8c191316a65f655c51aa54a24919f3e4}{get\+Table}} ()
+\item 
+\Hypertarget{classview_1_1Table_1_1TablePanel_aafb7d7f852b031710ee80bdf4f9faa83}\label{classview_1_1Table_1_1TablePanel_aafb7d7f852b031710ee80bdf4f9faa83} 
+void {\bfseries print} ()
+\begin{DoxyCompactList}\small\item\em Metodo stampare la tabella con la stampante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe che gestisce il pannello della Tabella Viene passato il database al costruttore per la funzione elimina voce. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classview_1_1Table_1_1TablePanel_a58abc8e2d43da33240f005683769f96e}\label{classview_1_1Table_1_1TablePanel_a58abc8e2d43da33240f005683769f96e} 
+\index{view.Table.TablePanel@{view.Table.TablePanel}!getModel@{getModel}}
+\index{getModel@{getModel}!view.Table.TablePanel@{view.Table.TablePanel}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classview_1_1Table_1_1TableModel}{Table\+Model}} view.\+Table.\+Table\+Panel.\+get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Table\+Model
+\end{DoxyReturn}
+Metodo per ottenere il Table\+Model \Hypertarget{classview_1_1Table_1_1TablePanel_a8c191316a65f655c51aa54a24919f3e4}\label{classview_1_1Table_1_1TablePanel_a8c191316a65f655c51aa54a24919f3e4} 
+\index{view.Table.TablePanel@{view.Table.TablePanel}!getTable@{getTable}}
+\index{getTable@{getTable}!view.Table.TablePanel@{view.Table.TablePanel}}
+\doxysubsubsection{\texorpdfstring{getTable()}{getTable()}}
+{\footnotesize\ttfamily JTable view.\+Table.\+Table\+Panel.\+get\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Jtable
+\end{DoxyReturn}
+Metodo per ottenere il JTable \Hypertarget{classview_1_1Table_1_1TablePanel_aa4a7133d4309ba64fdbc07af2942601b}\label{classview_1_1Table_1_1TablePanel_aa4a7133d4309ba64fdbc07af2942601b} 
+\index{view.Table.TablePanel@{view.Table.TablePanel}!searchText@{searchText}}
+\index{searchText@{searchText}!view.Table.TablePanel@{view.Table.TablePanel}}
+\doxysubsubsection{\texorpdfstring{searchText()}{searchText()}}
+{\footnotesize\ttfamily int view.\+Table.\+Table\+Panel.\+search\+Text (\begin{DoxyParamCaption}\item[{String}]{text\+To\+Search,  }\item[{int}]{current\+Index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+To\+Search} & testo da cercare \\
+\hline
+{\em current\+Index} & indice di riga corrente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Metodo che cerca la stringa passata a partire dall\textquotesingle{}indice di riga passato all\textquotesingle{}interno della Tabella, e se la trova viene evidenziata \Hypertarget{classview_1_1Table_1_1TablePanel_a71306dc1899849638205daa6f46efd3c}\label{classview_1_1Table_1_1TablePanel_a71306dc1899849638205daa6f46efd3c} 
+\index{view.Table.TablePanel@{view.Table.TablePanel}!setData@{setData}}
+\index{setData@{setData}!view.Table.TablePanel@{view.Table.TablePanel}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void view.\+Table.\+Table\+Panel.\+set\+Data (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classmodel_1_1Voce}{Voce}} $>$}]{lista\+Voci }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Voci} & \\
+\hline
+\end{DoxyParams}
+Metodo che mi permette di settare le Voci nel Table\+Model \Hypertarget{classview_1_1Table_1_1TablePanel_a8962ec47db1d023ae5b1c3bc8c2cb445}\label{classview_1_1Table_1_1TablePanel_a8962ec47db1d023ae5b1c3bc8c2cb445} 
+\index{view.Table.TablePanel@{view.Table.TablePanel}!setTableListener@{setTableListener}}
+\index{setTableListener@{setTableListener}!view.Table.TablePanel@{view.Table.TablePanel}}
+\doxysubsubsection{\texorpdfstring{setTableListener()}{setTableListener()}}
+{\footnotesize\ttfamily void view.\+Table.\+Table\+Panel.\+set\+Table\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceview_1_1Table_1_1TableListener}{Table\+Listener}}}]{table\+Listener }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Listener} & \\
+\hline
+\end{DoxyParams}
+Metodo per impostare il Table\+Listener 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/view/\+Table/Table\+Panel.\+java\end{DoxyCompactItemize}
