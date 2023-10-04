@@ -1,2 +1,2 @@
 --for my project i executed this command to create my jar file
-jar cvfm MyApp.jar manifest.txt -C ../bin . -C ../lib .
+jar cvfm MyBilancio.jar manifest.txt -C ../bin . -C ../lib .
