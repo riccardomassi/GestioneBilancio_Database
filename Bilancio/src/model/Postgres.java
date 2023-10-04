@@ -14,9 +14,9 @@ import java.sql.Statement;
  */
 public class Postgres {
     private Connection connection;
-    private String jdbcURL= "jdbc:postgresql://localhost:5432/bilancio";
-    private String username = "ricky";
-    private String password = "Rccmss01";
+    private String jdbcURL= "jdbc:postgresql://localhost:5432";
+    private String username = "username";
+    private String password = "password";
 
     /**
      * Metodo per connettersi al server
